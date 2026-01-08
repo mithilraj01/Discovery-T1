@@ -1,0 +1,14 @@
+{
+  "category": "chaotic",
+  "world_type": "chaotic",
+  "params": {
+    "r": 3.9,
+    "x0": 0.5
+  },
+  "seed": 42,
+  "baseline": "BaselineLinear",
+  "approx_dl": -256.4859729178366,
+  "stability": 1.778228646793689e-12,
+  "failed": false,
+  "failure_reasons": []
+}

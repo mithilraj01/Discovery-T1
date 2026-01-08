@@ -1,0 +1,14 @@
+{
+  "category": "stochastic",
+  "world_type": "stochastic",
+  "params": {
+    "alpha": 1.0,
+    "sigma": 0.1
+  },
+  "seed": 42,
+  "baseline": "BaselinePolynomial_deg5",
+  "approx_dl": -313.75318545232324,
+  "stability": null,
+  "failed": false,
+  "failure_reasons": []
+}

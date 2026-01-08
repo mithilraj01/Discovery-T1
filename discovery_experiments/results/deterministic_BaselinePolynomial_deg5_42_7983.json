@@ -1,0 +1,17 @@
+{
+  "category": "deterministic",
+  "world_type": "deterministic",
+  "params": {
+    "A": 5.0,
+    "omega": 0.5,
+    "phi": 1.0
+  },
+  "seed": 42,
+  "baseline": "BaselinePolynomial_deg5",
+  "approx_dl": 283.32351541006506,
+  "stability": null,
+  "intervention_sensitivity": 0.16967764897043527,
+  "failed": false,
+  "failure_reasons": [],
+  "cross_run_consistency_variance": 0.0
+}

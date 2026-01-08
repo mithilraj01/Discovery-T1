@@ -1,0 +1,15 @@
+{
+  "category": "deterministic",
+  "world_type": "deterministic",
+  "params": {
+    "A": 5.0,
+    "omega": 0.5,
+    "phi": 1.0
+  },
+  "seed": 42,
+  "baseline": "BaselineLinear",
+  "approx_dl": 114.776519581878,
+  "stability": null,
+  "failed": false,
+  "failure_reasons": []
+}
