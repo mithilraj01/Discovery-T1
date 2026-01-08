@@ -1,0 +1,18 @@
+{
+  "category": "stochastic",
+  "world_type": "stochastic",
+  "params": {
+    "alpha": 1.0,
+    "sigma": 0.1
+  },
+  "seed": 42,
+  "baseline": "BaselineKernelRidge",
+  "approx_dl": 405.1016960692572,
+  "stability": null,
+  "intervention_sensitivity": 6.814407354972686,
+  "failed": true,
+  "failure_reasons": [
+    "inconsistency"
+  ],
+  "cross_run_consistency_variance": 1653.9838008182815
+}

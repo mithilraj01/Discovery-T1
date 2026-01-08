@@ -8,11 +8,12 @@ import numpy as np
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from simulator.world_engine import generate_world_data
-from discovery_experiments.baselines import BaselineLinear, BaselinePolynomial, BaselineCompression
+from discovery_experiments.baselines import BaselineLinear, BaselinePolynomial, BaselineCompression, BaselineSpline, BaselineKernelRidge
 from discovery_experiments.metrics import approximate_description_length, stability_under_perturbation, cross_run_consistency, intervention_sensitivity
 from discovery_experiments.experiment_config import EXPERIMENT_CONFIG
 
-RESULTS_DIR = os.path.join(os.path.dirname(__file__), 'results')
+RESULTS_DIR = os.path.join(os.path.dirname(__file__), 'results', 'phase_D1_5')
+os.makedirs(RESULTS_DIR, exist_ok=True)
 
 def run_experiments():
     all_results = []
@@ -21,7 +22,9 @@ def run_experiments():
         BaselineLinear(),
         BaselinePolynomial(degree=3),
         BaselinePolynomial(degree=5),
-        BaselineCompression()
+        BaselineCompression(),
+        BaselineSpline(knots=10, order=3),
+        BaselineKernelRidge(alpha=0.1, gamma=0.5)
     ]
 
     for category, config in EXPERIMENT_CONFIG.items():

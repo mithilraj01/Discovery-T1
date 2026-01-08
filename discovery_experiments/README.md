@@ -32,3 +32,14 @@ python3 discovery_experiments/experiment_runner.py
 ```
 
 Results will be populated in `discovery_experiments/results/`.
+
+## Phase D1.5 — Control Baselines
+
+This phase introduces stronger, yet epistemically neutral, control baselines to test the robustness of the discoverability boundary.
+
+### New Baselines
+1.  **Spline Regression**: Piecewise polynomial regression with fixed knots. Captures smooth nonlinearities without physical assumptions.
+2.  **Kernel Ridge Regression**: Universal approximator using RBF kernel with fixed hyperparameters. Tests if infinite-dimensional feature spaces can overcome the boundary.
+
+### Purpose
+To determine if the "collapse" of explanation in chaotic regimes is merely due to weak linear/polynomial models, or if it persists even when using powerful universal approximators. If KRR and Splines also fail (via diverging DL or instability), it strengthens the claim that the boundary is a property of the data generating process, not the model class.

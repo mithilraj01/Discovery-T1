@@ -1,0 +1,16 @@
+{
+  "category": "stochastic",
+  "world_type": "stochastic",
+  "params": {
+    "alpha": 1.0,
+    "sigma": 0.1
+  },
+  "seed": 101,
+  "baseline": "BaselineLinear",
+  "approx_dl": -445.82532371714444,
+  "stability": null,
+  "intervention_sensitivity": 0.13260454753686296,
+  "failed": false,
+  "failure_reasons": [],
+  "cross_run_consistency_variance": 59.897290739965506
+}
